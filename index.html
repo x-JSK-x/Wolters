@@ -138,14 +138,20 @@
   }
   .header.scrolled .logo { color: var(--primary); }
   .logo-mark {
-    width: 38px;
-    height: 38px;
-    border: 1.5px solid currentColor;
-    border-radius: 50%;
+    width: 74px;
+    height: 74px;
+    margin-right: 2px;
+    border: none;
+    border-radius: 0;
     display: grid;
     place-items: center;
     font-size: 1.1rem;
     font-weight: 600;
+    filter: invert(1);
+    transition: filter var(--transition);
+  }
+  .header.scrolled .logo-mark {
+    filter: invert(0);
   }
   .logo-text small {
     display: block;
@@ -952,7 +958,7 @@
 <header class="header" id="header">
   <div class="container header-inner">
     <a href="#" class="logo" aria-label="Wolters Kempen Startseite">
-      <span class="logo-mark">W</span>
+      <img src="MEDIA/Wolters_Logo.png" alt="Wolters Kempen Logo" class="logo-mark" style="border:none;object-fit:contain;background:transparent;" />
       <span class="logo-text">
         Wolters Kempen
         <small>Familienunternehmen seit 1925</small>
@@ -1265,7 +1271,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <span class="logo-mark">W</span>
+          <img src="MEDIA/Wolters_Logo.png" alt="Wolters Kempen Logo" class="logo-mark" style="border:none;object-fit:contain;background:transparent;" />
           <span class="logo-text">
             Wolters Kempen
             <small>Familienunternehmen seit 1925</small>
